@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+
+/* APP STYLE */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #fafafa;
+}
+
+.app-container {
+    /* max width mobile screen */
+    max-width: 425px;
+    margin: auto;
+    background-color: white;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.action-app {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 2;
+}
+
+/* HEADER STYLE */
+.header-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e82db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.btn-add:hover {
+    background-color: #3276cf;
+}
+
+.ic-btn {
+    width: 20px;
+    height: 20px;
+}
+
+/* SEARCH STYLE */
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr 35px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-search {
+    background-color: #3e82db;
+    width: 35px !important;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-search {
+    border-radius: 5px;
+    border: none;
+    background-color: #fafafa;
+    height: 35px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+/* TASK STYLE */
+.list-task {
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+.item-task {
+    background-color: #fafafa;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.title-task {
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 35px;
+    line-clamp: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.desc-task {
+    font-size: 14px;
+    color: #858585;
+}
+
+.check-btn {
+    opacity: 0.2;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.check-btn:hover {
+    opacity: 1;
+}
+
+.check-btn svg {
+    width: 25px;
+    height: 25px;
+}
+
+.check-btn path {
+    fill: #3276cf;
+}
+
+/* MODAL STYLE */
+.modal-add {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: none;
+    max-width: 425px;
+    margin: auto;
+}
+
+.modal-add.show{
+    display: block;
+}
+
+.container-modal{
+    padding: 20px;
+}
+
+/* FORM STYLE */
+
+.form-add {
+    margin-top: 10px;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.input-form {
+    border-radius: 5px;
+    border: none;
+    background-color: #fafafa;
+    height: 35px;
+    width: calc(100% - 30px);
+    padding: 2px 15px;
+    margin-top: 5px;
+}
+
+.input-form:focus {
+    outline: none;
+}
+
+/* MODAL BTN STYLE */
+.modal-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.cancel-btn {
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cancel-btn:hover{
+    background-color: #f1f1f1;
+}
+
+.save-btn {
+    background-color: #3e82db;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.save-btn:hover{
+    background-color: #3276cf;
+}
+
